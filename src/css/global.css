@@ -1,0 +1,18 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  min-height: 100vh; /* vh 100% da tela do usuário*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(135deg, #050504 30%, #6b727a, #ffffff 90%);
+}
+
+.pokedex {
+  display: flex; /*separou as duas div dentro da pokedex a cartoes x nav deixando uma ao lado da outra*/
+  gap: 30px; /* espaçamento entre as duas div */
+  padding: 30px 0; /*espaçamento das bordas cima/baixo e laterais*/
+}

@@ -1,0 +1,72 @@
+.listagem {
+  max-width: 260px;
+}
+
+.listagem .pokemon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #c3c4c5;
+  color: #ffffff;
+  padding: 0 5px;
+  cursor: pointer;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+
+  min-height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  transition: 0.2s ease-in-out;
+}
+
+.listagem .pokemon:hover {
+  transform: scale(1.1);
+  transition: 0.7s ease-out;
+  background-color: grey;
+}
+
+.listagem .pokemon img {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.listagem .pokemon img.pokeball {
+  width: 22%;
+  border-radius: 60%;
+}
+
+.listagem .pokemon img.pokeball:hover {
+  transform: scale(1.3);
+  transition: 0.1s ease-out;
+}
+
+.listagem .pokemon img.pokeball-great {
+  width: 21%;
+  border-radius: 60%;
+}
+
+.listagem .pokemon img.pokeball-great:hover {
+  transform: scale(1.343);
+  transition: 0.1s ease-out;
+}
+
+.listagem .pokemon img.pokeball-ultra {
+  width: 21%;
+  border-radius: 60%;
+}
+
+.listagem .pokemon img.pokeball-ultra:hover {
+  transform: scale(1.23);
+  transition: 0.1s ease-out;
+}
+
+.listagem .pokemon span {
+  padding-right: 0px;
+}
+
+.listagem .pokemon.ativo {
+  background-color: grey;
+}

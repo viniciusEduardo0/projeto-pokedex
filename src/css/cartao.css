@@ -1,0 +1,136 @@
+.cartao-pokemon {
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 1rem;
+}
+
+.cartao-pokemon .cartao-topo {
+  padding: 30px 40px 0;
+  background: url(/src/imagens/fundo-cartao.png) top center / 70% no-repeat;
+  background-position-y: 50%;
+}
+
+.cartao-pokemon .nome {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.cartao-pokemon .tipo {
+  font-size: 12px;
+  background-color: #ffffff;
+  opacity: 0.7;
+  border-radius: 10px;
+  padding: 2px 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* tipo do pokemon, adiciona a borda, sombra e cor*/
+}
+
+.cartao-pokemon .detalhes {
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* nome e número, altera cor e posição*/
+}
+
+.cartao-pokemon .cartao-imagem {
+  display: flex;
+  justify-content: center;
+  margin: 5px auto 0;
+  width: 350px;
+  height: 350px;
+}
+
+.cartao-pokemon img {
+  max-height: 100%;
+  /* corrige o caso das imagens ficarem maior que o card */
+}
+
+.aberto img {
+  animation-name: slide;
+  animation-duration: 0.5s;
+}
+
+@keyframes slide {
+  from {
+    opacity: 0;
+    max-height: 60%;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cartao-pokemon .cartao-informacoes {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 80px 30px 50px;
+  margin-top: -70px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.cartao-pokemon .cartao-informacoes h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #6b727a;
+}
+
+.cartao-pokemon .cartao-informacoes .status {
+  padding: 0 10px;
+  width: 180px;
+}
+
+.cartao-pokemon .cartao-informacoes .habilidades {
+  padding: 0 10px;
+  width: 180px;
+}
+
+.cartao-pokemon .cartao-informacoes .habilidades ul li,
+.cartao-pokemon .cartao-informacoes .status ul li {
+  border-bottom: 1px solid #c3c4c5;
+  padding: 0 0 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.cartao-pokemon.aberto {
+  display: block;
+}
+
+.tipo-eletrico {
+  background: linear-gradient(135deg, #b3a104 10%, #ebfc00, #bbbbbb 80%);
+}
+
+.tipo-ray {
+  background: linear-gradient(135deg, #035510 10%, #f8d030, #e95935 90%);
+}
+
+.tipo-fogo {
+  background: linear-gradient(135deg, #c2260a 0%, #e93535, #bbbbbb 85%);
+}
+
+.tipo-agua {
+  background: linear-gradient(135deg, #031642 0%, #305cc4, #bbbbbb 80%);
+}
+
+.tipo-fantasma {
+  background: linear-gradient(135deg, #4e0677 0%, #880e7e, #bbbbbb 80%);
+}
+
+.tipo-trevas {
+  background: linear-gradient(135deg, #090111 0%, #27104d, #bbbbbb 90%);
+}
+
+.tipo-dragao {
+  background: linear-gradient(135deg, #75277c 0%, #1e2b2b, #bbbbbb 80%);
+}
+
+.tipo-pedra {
+  background: linear-gradient(135deg, #2b7015 20%, #3a278d, #bbbbbb 90%);
+}
+
+.tipo-lendario {
+  background: linear-gradient(135deg, #101616 0%, #cbd810, #bbbbbb 60%);
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/src/imagens/Pokedex-logo.ico"
+      type="image/x-icon"
+    />
+    <title>Project - Pokedéx</title>
+    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="src/css/global.css" />
+    <link rel="stylesheet" href="src/css/cartao.css" />
+    <link rel="stylesheet" href="src/css/listagem.css" />
+    <link rel="stylesheet" href="src/css/responsivo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="pokedex">
+        <nav class="listagem">
+          <ul>
+            <li class="pokemon ativo" id="electivire">
+              <img
+                src="src/imagens/cabeca-tamanho.png"
+                alt="rosto do electivire"
+              />
+              <span>Electivire</span>
+
+              <img
+                class="pokeball-ultra"
+                src="/src/imagens/ultra-ball.png"
+                alt="teste pokeball"
+              />
+            </li>
+
+            <li class="pokemon" id="tyranitar">
+              <img
+                src="src/imagens/cabeca-tyranitar.png"
+                alt="rosto do pikachu"
+              />
+              <span>Tyranitar</span>
+
+              <img
+                class="pokeball-ultra"
+                src="/src/imagens/ultra-ball.png"
+                alt="teste pokeball"
+              />
+            </li>
+
+            <li class="pokemon" id="charizard">
+              <img
+                src="src/imagens/cabeca-charizard.png"
+                alt="rosto do charizard"
+              />
+              <span>Charizard</span>
+              <img
+                class="pokeball-ultra"
+                src="/src/imagens/ultra-ball.png"
+                alt="teste pokeball"
+              />
+            </li>
+
+            <li class="pokemon" id="gyarados">
+              <img
+                src="src/imagens/cabeca-gyarados.png"
+                alt="rosto do pikachu"
+              />
+              <span>Gyarados</span>
+
+              <img
+                class="pokeball-great"
+                src="/src/imagens/great-ball.png"
+                alt="teste pokeball"
+              />
+            </li>
+
+            <li class="pokemon" id="gengar">
+              <img src="src/imagens/cabeca-gengar.png" alt="rosto do pikachu" />
+              <span>Gengar</span>
+
+              <img
+                class="pokeball"
+                src="/src/imagens/pokeball.png"
+                alt="teste pokeball"
+              />
+            </li>
+
+            <li class="pokemon" id="umbreon">
+              <img
+                src="src/imagens/cabeca-umbreon.png"
+                alt="rosto do umbreon"
+              />
+              <span>Umbreon</span>
+
+              <img
+                class="pokeball"
+                src="/src/imagens/pokeball.png"
+                alt="teste pokeball"
+              />
+            </li>
+
+            <li class="pokemon" id="rayquaza">
+              <img
+                src="src/imagens/cabeca-rayquaza.png"
+                alt="rosto do rayquaza"
+              />
+              <span>Rayquaza</span>
+
+              <img
+                class="pokeball"
+                src="/src/imagens/master-ball.png"
+                alt="teste pokeball"
+              />
+            </li>
+
+            <li class="pokemon" id="palkia">
+              <img src="src/imagens/cabeca-palkia.png" alt="rosto do palkia" />
+              <span>Palkia</span>
+
+              <img
+                class="pokeball"
+                src="/src/imagens/master-ball.png"
+                alt="teste pokeball"
+              />
+            </li>
+
+            <li class="pokemon" id="arceus">
+              <img src="src/imagens/cabeca-arceus.png" alt="rosto do arceus" />
+              <span>Arceus</span>
+
+              <img
+                class="pokeball"
+                src="/src/imagens/master-ball.png"
+                alt="teste pokeball"
+              />
+            </li>
+          </ul>
+        </nav>
+
+        <!--------------------------- DIVISÃO NAV do CARD ---------------------------->
+
+        <div class="cartoes-pokemon">
+          <div
+            class="cartao-pokemon aberto tipo-eletrico"
+            id="cartao-electivire"
+          >
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Electivire</h2>
+                <span>#466</span>
+              </div>
+              <span class="tipo">Elétrico</span>
+              <div class="cartao-imagem">
+                <img
+                  src="src/imagens/electivire.png"
+                  alt="foto do electivire"
+                />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+
+                <ul>
+                  <li>HP: 354</li>
+                  <li>Ataque: 379</li>
+                  <li>Defesa: 256</li>
+                  <li>Velocidade: 317</li>
+                  <li>Total: 540</li>
+                </ul>
+              </div>
+
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Pancada Elétrica</li>
+                  <li>Giga Impacto</li>
+                  <li>Raio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cartao-pokemon tipo-pedra" id="cartao-tyranitar">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Tyranitar</h2>
+                <span>#248</span>
+              </div>
+              <span class="tipo">Pedra</span>
+              <span class="tipo">Sombrio</span>
+              <div class="cartao-imagem">
+                <img src="src/imagens/tyranitar.png" alt="foto do tyranitar" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+
+                <ul>
+                  <li>HP: 404</li>
+                  <li>Ataque: 403</li>
+                  <li>Defesa: 350</li>
+                  <li>Velocidade: 328</li>
+                  <li>Total: 600</li>
+                </ul>
+              </div>
+
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Mordida</li>
+                  <li>Pulso Sombrio</li>
+                  <li>Hyper Raio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-fogo" id="cartao-charizard">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Charizard</h2>
+                <span>#006</span>
+              </div>
+              <span class="tipo">Fogo</span>
+              <span class="tipo">Voador</span>
+              <div class="cartao-imagem">
+                <img src="src/imagens/charizard.png" alt="foto do charizard" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+
+                <ul>
+                  <li>HP: 360</li>
+                  <li>Ataque: 293</li>
+                  <li>Defesa:280</li>
+                  <li>Velocidade: 328</li>
+                  <li>Total: 534</li>
+                </ul>
+              </div>
+
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Lança Chamas</li>
+                  <li>Ás dos Ares</li>
+                  <li>Inferno</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-agua" id="cartao-gyarados">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Gyarados</h2>
+                <span>#130</span>
+              </div>
+              <span class="tipo">Água</span>
+              <span class="tipo">Voador</span>
+              <div class="cartao-imagem">
+                <img src="src/imagens/gyarados.png" alt="foto do gyrados" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+
+                <ul>
+                  <li>HP: 394</li>
+                  <li>Ataque: 383</li>
+                  <li>Defesa: 282</li>
+                  <li>Velocidade: 328</li>
+                  <li>Total: 540</li>
+                </ul>
+              </div>
+
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Surfar</li>
+                  <li>Canhão de Água</li>
+                  <li>Pulso de Água</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-fantasma" id="cartao-gengar">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Gengar</h2>
+                <span>#094</span>
+              </div>
+              <span class="tipo">Fantasma</span>
+              <span class="tipo">Venenoso</span>
+              <div class="cartao-imagem">
+                <img src="src/imagens/gengar.png" alt="foto do gengar" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+
+                <ul>
+                  <li>HP: 324</li>
+                  <li>Ataque: 251</li>
+                  <li>Defesa: 240</li>
+                  <li>Velocidade: 350</li>
+                  <li>Total: 500</li>
+                </ul>
+              </div>
+
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Bola Sombria</li>
+                  <li>Lamber</li>
+                  <li>Bomba de Lama</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-trevas" id="cartao-umbreon">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Umbreon</h2>
+                <span>#197</span>
+              </div>
+              <span class="tipo">Escuro</span>
+              <div class="cartao-imagem">
+                <img src="src/imagens/umbreon.png" alt="foto do umbreon" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+
+                <ul>
+                  <li>HP: 394</li>
+                  <li>Ataque: 251</li>
+                  <li>Defesa: 350</li>
+                  <li>Velocidade: 251</li>
+                  <li>Total: 525</li>
+                </ul>
+              </div>
+
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Bola Sombria</li>
+                  <li>Cauda de Ferro</li>
+                  <li>Pulso Sombrio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-ray" id="cartao-rayquaza">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Rayquaza</h2>
+                <span>#384</span>
+              </div>
+              <span class="tipo">Dragão</span>
+              <span class="tipo">Voador</span>
+              <div class="cartao-imagem">
+                <img src="src/imagens/rayquaza.png" alt="foto do rayquaza" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+
+                <ul>
+                  <li>HP: 414</li>
+                  <li>Ataque: 438</li>
+                  <li>Defesa: 306</li>
+                  <li>Velocidade: 317</li>
+                  <li>Total: 680</li>
+                </ul>
+              </div>
+
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Hyper Raio</li>
+                  <li>Trovão</li>
+                  <li>Ás dos Ares</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-dragao" id="cartao-palkia">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Palkia</h2>
+                <span>#484</span>
+              </div>
+              <span class="tipo">Água</span>
+              <span class="tipo">Dragão</span>
+              <div class="cartao-imagem">
+                <img src="src/imagens/palkia.png" alt="foto do palkia" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+
+                <ul>
+                  <li>HP: 384</li>
+                  <li>Ataque: 372</li>
+                  <li>Defesa: 328</li>
+                  <li>Velocidade: 328</li>
+                  <li>Total: 680</li>
+                </ul>
+              </div>
+
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Pulso de Água</li>
+                  <li>Hyper Raio</li>
+                  <li>Rasgo Espacial</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cartao-pokemon tipo-lendario" id="cartao-arceus">
+            <div class="cartao-topo">
+              <div class="detalhes">
+                <h2 class="nome">Arceus</h2>
+                <span>#493</span>
+              </div>
+              <span class="tipo">Normal</span>
+              <div class="cartao-imagem">
+                <img src="src/imagens/arceus.png" alt="foto do arceus" />
+              </div>
+            </div>
+
+            <div class="cartao-informacoes">
+              <div class="status">
+                <h3>Status</h3>
+
+                <ul>
+                  <li>HP: 444</li>
+                  <li>Ataque: 372</li>
+                  <li>Defesa: 372</li>
+                  <li>Velocidade: 372</li>
+                  <li>Total: 720</li>
+                </ul>
+              </div>
+
+              <div class="habilidades">
+                <h3>Habilidades</h3>
+                <ul>
+                  <li>Poder Cósmico</li>
+                  <li>Abalo Sísmico</li>
+                  <li>Hyper Raio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/src/js/index.js"></script>
+  </body>
+</html>
