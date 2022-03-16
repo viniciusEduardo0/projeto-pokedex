@@ -6,7 +6,7 @@
 
 .cartao-pokemon .cartao-topo {
   padding: 30px 40px 0;
-  background: url('../imagens/fundo-cartao.png) top center / 70% no-repeat;
+  background: url('../imagens/fundo-cartao.png') top center / 70% no-repeat;
   background-position-y: 50%;
 }
 
